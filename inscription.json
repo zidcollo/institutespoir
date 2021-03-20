@@ -1,0 +1,633 @@
+{
+  "enregistrement": [
+    {
+      "id": 1,
+      "email": "exemple@gmailcom",
+      "tel_fix": "0409123456",
+      "parents_separe": "oui",
+      "adresse": {},
+      "pere": {
+        "nom_pere": "TOTO",
+        "prenom_pere": "titi",
+        "proffession_pere": "gestionnaire",
+        "tel_mobile_pere": "",
+        "cour_arabe_pere": "non",
+        "cour_islam_pere": "oui"
+      },
+      "mere": {
+        "nom_mere": "TATA",
+        "prenom_mere": "toutou",
+        "proffession_mere": "enseignante",
+        "tel_mobile_mere": "0609123456",
+        "cour_arabe_mere": "oui",
+        "cour_islam_mere": "oui"
+      },
+      "enfants": [
+        {
+          "id": 1,
+          "nom": "ABDELLI",
+          "prenom": "Mourad",
+          "sexe": "F",
+          "date_nais": "2010-12-23",
+          "lieu_nais": "Bron",
+          "base_arabe": "Oui",
+          "ancien_eleve": "Oui",
+          "num_class": "AZE321654",
+          "photographie": "non",
+          "entrer_seul": "non"
+        },
+        {
+          "idenfant": 2,
+          "nomenf": "ABDELLI",
+          "prenomenf": "Mourad",
+          "sexe": "F",
+          "dateNaissance": "2010-12-23",
+          "lieuNaissance": "Bron",
+          "suiviCours": "Oui",
+          "suiviCoursChezNous": "Oui",
+          "numClasse": "AZE321654",
+          "photographie": "non",
+          "entrer_seul": "non"
+        }
+      ],
+      "acceptTerms": true
+    },
+    {
+      "id": 2,
+      "email": "exemple@gmailcom",
+      "telephoneFixe": "0409123456",
+      "parents_separe": "oui",
+      "adresse": "11 rue generale  xxx",
+      "codePostale": "",
+      "ville": "Bron",
+      "pere": {
+        "nom": "TOTO",
+        "prenom": "titi",
+        "proffession": "gestionnaire",
+        "telephonePortable": "",
+        "inscrirCoursArabe": "non",
+        "inscrirCoursIslamiq": "oui"
+      },
+      "mere": {
+        "nom": "TATA",
+        "prenom": "toutou",
+        "proffession": "enseignante",
+        "telephonePortable": "0609123456",
+        "inscrirCoursArabe": "oui",
+        "inscrirCoursIslamiq": "oui"
+      },
+      "enfants": [
+        {
+          "idenfant": 1,
+          "nom": "ABDELLI",
+          "prenom": "Mourad",
+          "sexe": "F",
+          "dateNaissance": "2010-12-23",
+          "lieuNaissance": "Bron",
+          "suiviCours": "Oui",
+          "suiviCoursChezNous": "Oui",
+          "numClasse": "AZE321654",
+          "photographie": "non",
+          "entrer_seul": "non"
+        },
+        {
+          "idenfant": 2,
+          "nom": "ABDELLI",
+          "prenom": "Mourad",
+          "sexe": "F",
+          "dateNaissance": "2010-12-23",
+          "lieuNaissance": "Bron",
+          "suiviCours": "Oui",
+          "suiviCoursChezNous": "Oui",
+          "numClasse": "AZE321654",
+          "photographie": "non",
+          "entrer_seul": "non"
+        }
+      ],
+      "acceptTerms": true
+    },
+    {
+      "id": 3,
+      "email": "saida.bouselsal@yahoo.fr",
+      "tel_fix": "",
+      "parents_separe": "Non",
+      "adresse": {
+        "rue": "7 rue Paul Pic",
+        "ville": "BRON",
+        "code_postale": "69500"
+      },
+      "pere": {
+        "nom_pere": "HADIBY",
+        "prenom_pere": "ZID",
+        "proffession_pere": "asasa",
+        "tel_mobile_pere": "0695375614",
+        "cour_arabe_pere": true,
+        "cour_islam_pere": ""
+      },
+      "mere": {
+        "nom_mere": "BOUSELSAL",
+        "prenom_mere": "SAIDA",
+        "proffession_mere": "facteur",
+        "tel_mobile_mere": "0665176846",
+        "cour_arabe_mere": "",
+        "cour_islam_mere": true
+      },
+      "enfants": [
+        {
+          "id": 0,
+          "nom": "hadiby",
+          "prenom": "karim",
+          "sexe": "M",
+          "date_nais": "06/06/2012",
+          "lieu_nais": "Lyon",
+          "base_arabe": "Non",
+          "ancien_eleve": "non",
+          "num_class": "",
+          "decharge": "",
+          "photographie": "Non",
+          "entrer_seul": "Non"
+        }
+      ],
+      "acceptTerms": true
+    },
+    {
+      "id": 9,
+      "email": "",
+      "tel_fix": "",
+      "parents_separe": "",
+      "adresse": {
+        "rue": "",
+        "ville": "",
+        "code_postale": ""
+      },
+      "pere": {
+        "nom_pere": "HADIBY",
+        "prenom_pere": "ZID",
+        "proffession_pere": "",
+        "tel_mobile_pere": "0695375614",
+        "cour_arabe_pere": "",
+        "cour_islam_pere": ""
+      },
+      "mere": {
+        "nom_mere": "",
+        "prenom_mere": "",
+        "proffession_mere": "",
+        "tel_mobile_mere": "",
+        "cour_arabe_mere": "",
+        "cour_islam_mere": ""
+      },
+      "enfants": [],
+      "acceptTerms": true
+    },
+    {
+      "id": 10,
+      "email": "",
+      "tel_fix": "",
+      "parents_separe": "",
+      "adresse": {
+        "rue": "",
+        "ville": "",
+        "code_postale": ""
+      },
+      "pere": {
+        "nom_pere": "HADIBY",
+        "prenom_pere": "ZID",
+        "proffession_pere": "",
+        "tel_mobile_pere": "0695375614",
+        "cour_arabe_pere": "",
+        "cour_islam_pere": ""
+      },
+      "mere": {
+        "nom_mere": "",
+        "prenom_mere": "",
+        "proffession_mere": "",
+        "tel_mobile_mere": "",
+        "cour_arabe_mere": "",
+        "cour_islam_mere": ""
+      },
+      "enfants": [],
+      "acceptTerms": true
+    },
+    {
+      "id": 11,
+      "email": "",
+      "tel_fix": "",
+      "parents_separe": "",
+      "adresse": {
+        "rue": "",
+        "ville": "",
+        "code_postale": ""
+      },
+      "pere": {
+        "nom_pere": "HADIBY",
+        "prenom_pere": "ZID",
+        "proffession_pere": "",
+        "tel_mobile_pere": "0695375614",
+        "cour_arabe_pere": "",
+        "cour_islam_pere": ""
+      },
+      "mere": {
+        "nom_mere": "",
+        "prenom_mere": "",
+        "proffession_mere": "",
+        "tel_mobile_mere": "",
+        "cour_arabe_mere": "",
+        "cour_islam_mere": ""
+      },
+      "enfants": [],
+      "acceptTerms": true
+    },
+    {
+      "id": 12,
+      "email": "saida.bouselsal@yahoo.fr",
+      "tel_fix": "",
+      "parents_separe": "Non",
+      "adresse": {
+        "rue": "7 rue Paul Pic",
+        "ville": "BRON",
+        "code_postale": "69500"
+      },
+      "pere": {
+        "nom_pere": "HADIBY",
+        "prenom_pere": "ZID",
+        "proffession_pere": "asasa",
+        "tel_mobile_pere": "0695375614",
+        "cour_arabe_pere": true,
+        "cour_islam_pere": ""
+      },
+      "mere": {
+        "nom_mere": "BOUSELSAL",
+        "prenom_mere": "SAIDA",
+        "proffession_mere": "facteur",
+        "tel_mobile_mere": "0665176846",
+        "cour_arabe_mere": "",
+        "cour_islam_mere": true
+      },
+      "enfants": [
+        {
+          "id": 0,
+          "nom": "HADIBY",
+          "prenom": "SAIDA",
+          "sexe": "F",
+          "date_nais": "2/12/2011",
+          "lieu_nais": "Lyon",
+          "base_arabe": "Non",
+          "ancien_eleve": "non",
+          "num_class": "",
+          "decharge": "",
+          "photographie": "Non",
+          "entrer_seul": "Non"
+        }
+      ],
+      "acceptTerms": true
+    },
+    {
+      "id": 13,
+      "email": "",
+      "tel_fix": "",
+      "parents_separe": "",
+      "adresse": {
+        "rue": "",
+        "ville": "",
+        "code_postale": ""
+      },
+      "pere": {
+        "nom_pere": "BOUSELSAL",
+        "prenom_pere": "SAIDA",
+        "proffession_pere": "",
+        "tel_mobile_pere": "0665176846",
+        "cour_arabe_pere": "",
+        "cour_islam_pere": ""
+      },
+      "mere": {
+        "nom_mere": "",
+        "prenom_mere": "",
+        "proffession_mere": "",
+        "tel_mobile_mere": "",
+        "cour_arabe_mere": "",
+        "cour_islam_mere": ""
+      },
+      "enfants": [],
+      "acceptTerms": false
+    },
+    {
+      "id": 14,
+      "email": "",
+      "tel_fix": "",
+      "parents_separe": "",
+      "adresse": {
+        "rue": "",
+        "ville": "",
+        "code_postale": ""
+      },
+      "pere": {
+        "nom_pere": "BOUSELSAL",
+        "prenom_pere": "SAIDA",
+        "proffession_pere": "",
+        "tel_mobile_pere": "0665176846",
+        "cour_arabe_pere": "",
+        "cour_islam_pere": ""
+      },
+      "mere": {
+        "nom_mere": "",
+        "prenom_mere": "",
+        "proffession_mere": "",
+        "tel_mobile_mere": "",
+        "cour_arabe_mere": "",
+        "cour_islam_mere": ""
+      },
+      "enfants": [],
+      "acceptTerms": true
+    },
+    {
+      "id": 15,
+      "email": "",
+      "tel_fix": "",
+      "parents_separe": "",
+      "adresse": {
+        "rue": "",
+        "ville": "",
+        "code_postale": ""
+      },
+      "pere": {
+        "nom_pere": "BOUSELSAL",
+        "prenom_pere": "SAIDA",
+        "proffession_pere": "",
+        "tel_mobile_pere": "0665176846",
+        "cour_arabe_pere": "",
+        "cour_islam_pere": ""
+      },
+      "mere": {
+        "nom_mere": "",
+        "prenom_mere": "",
+        "proffession_mere": "",
+        "tel_mobile_mere": "",
+        "cour_arabe_mere": "",
+        "cour_islam_mere": ""
+      },
+      "enfants": [],
+      "acceptTerms": true
+    },
+    {
+      "id": 17,
+      "email": "saida.bouselsal@yahoo.fr",
+      "tel_fix": "",
+      "parents_separe": "Non",
+      "adresse": {
+        "rue": "7 rue Paul Pic",
+        "ville": "BRON",
+        "code_postale": "69500"
+      },
+      "pere": {
+        "nom_pere": "",
+        "prenom_pere": "",
+        "proffession_pere": "",
+        "tel_mobile_pere": "",
+        "cour_arabe_pere": "",
+        "cour_islam_pere": ""
+      },
+      "mere": {
+        "nom_mere": "BOUSELSAL",
+        "prenom_mere": "SAIDA",
+        "proffession_mere": "",
+        "tel_mobile_mere": "0665176846",
+        "cour_arabe_mere": true,
+        "cour_islam_mere": true
+      },
+      "enfants": [],
+      "acceptTerms": true
+    },
+    {
+      "id": 18,
+      "email": "saida.bouselsal@yahoo.fr",
+      "tel_fix": "",
+      "parents_separe": "",
+      "adresse": {
+        "rue": "11 rue albert camus",
+        "ville": "vaulx en velin",
+        "code_postale": "69120"
+      },
+      "pere": {
+        "nom_pere": "HADIBY",
+        "prenom_pere": "ZID",
+        "proffession_pere": "",
+        "tel_mobile_pere": "0695375614",
+        "cour_arabe_pere": "",
+        "cour_islam_pere": ""
+      },
+      "mere": {
+        "nom_mere": "SAIDA",
+        "prenom_mere": "HADIBY",
+        "proffession_mere": "",
+        "tel_mobile_mere": "0668712048",
+        "cour_arabe_mere": "",
+        "cour_islam_mere": ""
+      },
+      "enfants": [],
+      "acceptTerms": true
+    },
+    {
+      "id": 19,
+      "email": "saida.bouselsal@yahoo.fr",
+      "tel_fix": "",
+      "parents_separe": "",
+      "adresse": {
+        "rue": "7 rue Paul Pic",
+        "ville": "BRON",
+        "code_postale": "69500"
+      },
+      "pere": {
+        "nom_pere": "",
+        "prenom_pere": "",
+        "proffession_pere": "",
+        "tel_mobile_pere": "",
+        "cour_arabe_pere": "",
+        "cour_islam_pere": ""
+      },
+      "mere": {
+        "nom_mere": "BOUSELSAL",
+        "prenom_mere": "SAIDA",
+        "proffession_mere": "",
+        "tel_mobile_mere": "0665176846",
+        "cour_arabe_mere": "",
+        "cour_islam_mere": ""
+      },
+      "enfants": [],
+      "acceptTerms": true
+    },
+    {
+      "id": 20,
+      "email": "",
+      "tel_fix": "",
+      "parents_separe": "",
+      "adresse": {
+        "rue": "",
+        "ville": "",
+        "code_postale": ""
+      },
+      "pere": {
+        "nom_pere": "BOUSELSAL",
+        "prenom_pere": "SAIDA",
+        "proffession_pere": "",
+        "tel_mobile_pere": "0665176846",
+        "cour_arabe_pere": "",
+        "cour_islam_pere": ""
+      },
+      "mere": {
+        "nom_mere": "",
+        "prenom_mere": "",
+        "proffession_mere": "",
+        "tel_mobile_mere": "",
+        "cour_arabe_mere": "",
+        "cour_islam_mere": ""
+      },
+      "enfants": [],
+      "acceptTerms": true
+    },
+    {
+      "id": 21,
+      "email": "",
+      "tel_fix": "",
+      "parents_separe": "",
+      "adresse": {
+        "rue": "",
+        "ville": "",
+        "code_postale": ""
+      },
+      "pere": {
+        "nom_pere": "BOUSELSAL",
+        "prenom_pere": "SAIDA",
+        "proffession_pere": "",
+        "tel_mobile_pere": "0665176846",
+        "cour_arabe_pere": "",
+        "cour_islam_pere": ""
+      },
+      "mere": {
+        "nom_mere": "",
+        "prenom_mere": "",
+        "proffession_mere": "",
+        "tel_mobile_mere": "",
+        "cour_arabe_mere": "",
+        "cour_islam_mere": ""
+      },
+      "enfants": [],
+      "acceptTerms": true
+    },
+    {
+      "id": 22,
+      "email": "",
+      "tel_fix": "",
+      "parents_separe": "",
+      "adresse": {
+        "rue": "",
+        "ville": "",
+        "code_postale": ""
+      },
+      "pere": {
+        "nom_pere": "",
+        "prenom_pere": "",
+        "proffession_pere": "",
+        "tel_mobile_pere": "",
+        "cour_arabe_pere": "",
+        "cour_islam_pere": ""
+      },
+      "mere": {
+        "nom_mere": "",
+        "prenom_mere": "",
+        "proffession_mere": "",
+        "tel_mobile_mere": "",
+        "cour_arabe_mere": "",
+        "cour_islam_mere": ""
+      },
+      "enfants": [],
+      "acceptTerms": true
+    },
+    {
+      "id": 23,
+      "email": "",
+      "tel_fix": "",
+      "parents_separe": "",
+      "adresse": {
+        "rue": "",
+        "ville": "",
+        "code_postale": ""
+      },
+      "pere": {
+        "nom_pere": "",
+        "prenom_pere": "",
+        "proffession_pere": "",
+        "tel_mobile_pere": "",
+        "cour_arabe_pere": "",
+        "cour_islam_pere": ""
+      },
+      "mere": {
+        "nom_mere": "",
+        "prenom_mere": "",
+        "proffession_mere": "",
+        "tel_mobile_mere": "",
+        "cour_arabe_mere": "",
+        "cour_islam_mere": ""
+      },
+      "enfants": [],
+      "acceptTerms": true
+    },
+    {
+      "id": 24,
+      "email": "saida.bouselsal@yahoo.fr",
+      "tel_fix": "",
+      "parents_separe": "Non",
+      "adresse": {
+        "rue": "11 RUE ALBERT CAMUS",
+        "ville": "VAULX EN VELIN",
+        "code_postale": "69120"
+      },
+      "pere": {
+        "nom_pere": "BOUSELSAL",
+        "prenom_pere": "SAIDA",
+        "proffession_pere": "asasa",
+        "tel_mobile_pere": "0665176846",
+        "cour_arabe_pere": "",
+        "cour_islam_pere": ""
+      },
+      "mere": {
+        "nom_mere": "hadiby",
+        "prenom_mere": "saida",
+        "proffession_mere": "facteur",
+        "tel_mobile_mere": "0668712048",
+        "cour_arabe_mere": true,
+        "cour_islam_mere": ""
+      },
+      "enfants": [],
+      "acceptTerms": true
+    },
+    {
+      "id": 25,
+      "email": "",
+      "tel_fix": "",
+      "parents_separe": "",
+      "adresse": {
+        "rue": "",
+        "ville": "",
+        "code_postale": ""
+      },
+      "pere": {
+        "nom_pere": "",
+        "prenom_pere": "",
+        "proffession_pere": "",
+        "tel_mobile_pere": "",
+        "cour_arabe_pere": "",
+        "cour_islam_pere": ""
+      },
+      "mere": {
+        "nom_mere": "",
+        "prenom_mere": "",
+        "proffession_mere": "",
+        "tel_mobile_mere": "",
+        "cour_arabe_mere": "",
+        "cour_islam_mere": ""
+      },
+      "enfants": [],
+      "acceptTerms": true
+    }
+  ]
+}

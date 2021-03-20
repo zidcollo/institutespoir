@@ -1,0 +1,6 @@
+page d'inscription eleve : composant inscription
+page info eleve : composant eleve
+page liste des eleves : composant listeleve
+page modification eleve : composant inscription rempli
+
+http://in4matique.free.fr/Ecole/ihm/

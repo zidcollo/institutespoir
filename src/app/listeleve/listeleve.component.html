@@ -1,0 +1,103 @@
+
+<h1>    </h1>
+<div class="card m-3">
+
+   
+      <h4 class="card-header">Liste des Eleves 2020-2021</h4> 
+    
+      <div class="card-body"> 
+              
+        <div class=" col" >                         
+          <input (keyup)="rechercheEleve()" [(ngModel)]="rechercheText" class="form-control "  type="text" placeholder="Rechercher ..." >
+          
+            <i class="fa fa-search"></i>
+         
+          <!--<button class="btn btn-outline-primary" type="submit">Rechercher</button>-->
+        </div> 
+
+        <br>
+        <table class="table table-sm"    >
+
+              <thead >
+                <tr>
+                  <th scope="col">id</th>
+                  <th scope="col">Nom</th>
+                  <th scope="col">Prenom</th>
+                  <!--<th scope="col">Sexe</th>-->
+                  <th scope="col">Date de Naissance</th>
+                  <th scope="col">Lieu de Naissance</th>                
+            <!--  <th scope="col">Adresse</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">pere</th>
+                  <th scope="col">mere</th>
+                  <th scope="col">tel</th>
+                  <th scope="col">Parent séparé</th>
+                  <th scope="col">base arabe</th>
+                  <th scope="col">déja inscrit</th> -->
+                  <th scope="col">Paiement</th>
+                </tr>
+              </thead>
+<!--              <div *ngFor="let eleves12 of resultEnreg">
+-->              <tbody *ngFor="let eleve of resultEnreg" >
+                
+                    <tr scope="row"   >
+                  
+                        <td >{{eleve.id}}</td>
+                        <td>{{eleve.pere.nom_pere}}</td>
+                        <td>{{eleve.pere.prenom_pere}}</td>
+                            <!-- <td>{{eleve.sexe}}</td>  --> 
+                        <td>{{eleve.email}}</td>
+                        <td>{{eleve.tel_fix}}</td>
+                          <!--       <td>{{eleve.adresse}}</td>
+                        <td>{{eleve.email}}</td>
+                        <td>{{eleve.nom_pere}}</td>
+                        <td>{{eleve.nom_mere}}</td>
+                        <td>{{eleve.tel}}</td>
+                        <td>{{eleve.parent_separe}}</td>
+                        <td>{{eleve.base_arabe}}</td>
+                        <td>{{eleve.ancien_eleve}}</td>  -->
+
+                      <!--  <td>{{eleve.paiement}}</td>  --> 
+                      <td>   
+                           <!--<span (click)="updatePaiement(eleve)" [ngClass]="{
+                             'badge-info':eleve.paiement,
+                             'badge-danger':!eleve.paiement
+                            }" class="badge badge-danger badge-pill">
+                           <i class="fa" [ngClass]="{
+                                 'fa-thumbs-up': eleve.paiement,
+                                 'fa-thumbs-down': !eleve.paiement
+                              }"></i>
+                              </span>--> 
+
+                                  <!--<input (click)="updatePaiement(eleve)"   type="checkbox"  id="eleve.paiement"   >-->
+                                  <!--<div ng-switch="eleve.paiement">
+                                      <div ng-switch-when="true"> </div>
+                                      <div ng-switch-when="false"> </div>
+                                    </div>-->
+                          
+                        </td>
+                        <td>
+                            <button (click)="editEleve(eleve)" class="btn btn-sm btn-warning">
+                                <i class="fa fa-pencil"></i>
+                            </button>
+                        </td>
+                        <td> <button (click)="deleteEleve(eleve.id)" class="btn btn-sm btn-dark">
+                              <i class="fa fa-trash"></i>
+                          </button> 
+                        </td>
+                              <!-- <button id="edit" [routerLink]="[ '/listuser/edituser' ]" >Edit</button> 
+                             <button id="delete" (click)="deleteUserc(user.id)">Delete</button> -->
+                                <!-- <th (click)="deleteUserc(user.id)">Edit</th> -->
+                      </tr>
+              </tbody>
+            </table>
+      </div>
+</div>
+<!--<div>
+    <button (click)="getEleve(2)" class="btn btn-sm btn-warning mb-2">
+        Update <i class="fa fa-pencil"> </i>
+    </button>
+
+</div>-->
+
+<!-- <app-inscription  ></app-inscription>-->

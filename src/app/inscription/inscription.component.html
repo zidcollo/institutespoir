@@ -1,0 +1,416 @@
+<!-- 
+  /*
+        "id": 1,
+        "nom": "Omar",
+        "prenom": "mahjoub",
+        "sexe":"m",
+        "date_nais":"05/05/2011",
+        "lieu_nais":"BRON",
+        "email":"omar@yahoo.fr",
+        "adresse":"5 rue paul pic 69500 bron",
+        "nom_pere":"ali mahjoub",
+        "nom_mere":"amira mahjoub",
+        tel
+
+        "parent_separe":false,
+        "base_arabe":true,
+        "inscri_avant_ecole":false,
+        "paiement":true
+*/
+
+-->
+<div class=" card m-3">
+  
+   
+    <h3 class="card-header">FICHE D'INSCIPTION 2020-2021</h3>
+  
+  
+
+  <div class="card-body">
+    <form [formGroup]="enregistrementForm" (ngSubmit)="onSubmit()" >
+
+
+<!--       parents            -->
+  <!-- Text input -->
+  
+<div formGroupName = "pere" > <!--   div formGroupName = "pere" -->
+  <h5 class="card-header text-center">Les parents</h5>
+  <div class="row mb-4"  >
+    <div class="col">
+      <div class="form-outline"  >
+        <label class="form-label" for="nom_pere">Nom Pére</label>
+        <input  name="nom_pere" type="text" id="nom_pere" class="form-control" formControlName="nom_pere"   />
+      
+      </div>
+    </div>
+    <div class="col">
+      <div class="form-outline">
+        <label class="form-label" for="prenom_pere">Prenom Pére</label>
+        <input  name="prenom_pere" type="text" id="prenom_pere" class="form-control" formControlName="prenom_pere" />
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4">
+    <div class="col">
+      <div class="form-outline">
+        <label class="form-label" for="proffession_pere">Profession Pére</label>
+        <input   name="proffession_pere" type="text" id="proffession_pere" class="form-control" formControlName="proffession_pere"  />
+      </div>
+    </div>
+    <div class="col">
+      <div class="form-outline">
+        <label class="form-label" for="tel_mobile_pere">Tel Pére</label>
+        <input  type="text" id="tel_mobile_pere" class="form-control" formControlName="tel_mobile_pere" />
+      </div>
+    </div>
+  </div>
+<div >
+  <div >
+    <label class="form-label" for=""> Voulez-vous inscrir au cours  :</label>
+  </div>
+  <div class="form-check ">
+    <input class="form-check-input" type="checkbox" value="" id="cour_arabe_pere" formControlName="cour_arabe_pere">
+    <label  class="form-check-label" for="cour_arabe_pere">   Arabe Adulte    </label>
+  </div>
+  <div class="form-check ">
+    <input class="form-check-input" type="checkbox" value="" id="cour_islam_pere" formContolName="cour_islam_pere">
+    <label class="form-check-label" for="cour_islam_pere">   Science Islamique   </label>
+  </div>
+
+
+</div>
+</div>
+ 
+<!-- -->
+  <!-- Text input -->
+ 
+<div formGroupName = "mere" > <!--   div formGroupName = "pere" -->
+  <div class="row mb-4">
+    <div class="col">
+      <div class="form-outline">
+        <label class="form-label" for="nom_mere">Nom Mére</label>
+        <input name="nom_mere" type="text" id="nom_mere" class="form-control" formControlName="nom_mere" />
+      </div>
+    </div>
+
+
+
+
+
+
+    <div class="col">
+      <div class="form-outline">
+        <label class="form-label" for="prenom_mere">Prenom Mére</label>
+        <input name="prenom_mere" type="text" id="prenom_mere" class="form-control" formControlName="prenom_mere"/>
+      </div>
+    </div>
+  </div>
+  <div class="row mb-4">
+    <div class="col">
+      <div class="form-outline">
+        <label class="form-label" for="proffession_mere">Profession Mére</label>
+        <input  name="proffession_mere" type="text" id="proffession_mere" class="form-control" formControlName="proffession_mere" />
+      </div>
+    </div>
+    <div class="col">
+      <div class="form-outline">
+        <label class="form-label" for="tel_mobile_mere">Tel Mére</label>
+        <input  type="text" id="tel_mobile_mere" class="form-control" formControlName="tel_mobile_mere" />
+      </div>
+    </div>
+  </div>
+    <div >
+      <div >
+        <label class="form-label" > Voulez-vous inscrir au cours  :</label>
+      </div>
+      <div class="form-check ">
+        <input  class="form-check-input" type="checkbox" value="" id="cour_arabe_mere" formControlName="cour_arabe_mere">
+        <label class="form-check-label" for="cour_arabe_mere">   Arabe Adulte    </label>
+      </div>
+      <div class="form-check ">
+        <input  class="form-check-input" type="checkbox" value="" id="cour_islam_mere" formControlName="cour_islam_mere" >
+        <label class="form-check-label" for="cour_islam_mere">   Sciences Islamique   </label>
+      </div>
+    
+    </div>
+  
+</div>
+
+  <!-- div adresse -->
+<div class="row mb-4"  formGroupName = "adresse" >   
+  <div class="form-outline mb-4">
+    <label class="form-label" for="rue">Addresse </label>
+    <input  name="rue" type="text" id="rue" class="form-control" formControlName="rue"/>
+  </div>
+  <div class="col">
+    <div class="form-outline">
+      <label class="form-label" for="ville">Ville</label>
+      <input  name="ville" type="text" id="ville" class="form-control" formControlName="ville" />
+    </div>
+  </div>
+  <div class="col">
+    <div class="form-outline">
+      <label class="form-label" for="code_postale">Code Postale</label>
+      <input  name="code_postale" type="text" id="code_postale" class="form-control" formControlName="code_postale" />
+    </div>
+  </div>
+</div>
+
+  <!-- Email  -->
+  <div class="form-outline mb-4">
+    <label class="form-label" for="email">Email</label>
+    <input  name="email" type="email" id="email" class="form-control" formControlName="email" />
+  </div>
+
+  <!-- tel fix  -->
+  <div class="form-outline mb-4">
+    <label class="form-label" for="parents_separe">Tel Fix</label>
+    <input  name="parents_separe" type="text" id="parents_separe" class="form-control" formControlName="parents_separe" />
+  </div>
+<!--  parent separer-->
+<div >
+  <label class="form-label" for="parents_separe">Parents séparés ?</label>
+</div>
+<div class="form-check form-check-inline">
+  
+  <input  name="parents_separe" class="form-check-input"  type="radio" value="Oui"
+    name="parents_separe"   id="flexRadioDisabled" formControlName="parents_separe"  />
+  <label class="form-check-label" for="parents_separe"> Oui </label>
+</div>
+
+<div class="form-check form-check-inline mb-4">
+  <input  name="parents_separe"  class="form-check-input" type="radio" value="Non"
+    name="parents_separe"      id="parents_separe"   formControlName="parents_separe"  />
+  <label class="form-check-label" for="flexRadioCheckedDisabled"> Non </label>
+</div>
+<div ng-switch="parents_separe">
+  <div ng-switch-when="Oui"> </div>
+  <div ng-switch-when="Non"> </div>
+</div>
+<!--  div pour nombre d'enfants -->
+<!--  <div class="row mb-4">
+    <div class="input-group mb-6">
+      <input  name="nbr" type="text" class="form-control" placeholder="Nombre d'enfant .." aria-describedby="button-addon2">
+      <button (click)="nbrEnfant()" class="btn btn-outline-primary" type="button" id="button-addon2">Valider</button>
+    </div>
+
+  </div>-->
+
+
+    <!--           ***********************    enfant       *********************     -->
+
+
+
+    <div class="card-header border "  disabled >
+              <h5 class="card-header text-center">Enfants</h5>
+              <br>
+      <div formArrayName="enfants" >
+        <div *ngFor="let enfant of enfants.controls; let pointIndex=index" [formGroupName]="pointIndex"> 
+          <h6> Enfant : {{ pointIndex+1 }}</h6>
+              <div class="row mb-4">
+                <div class="col">
+                  <div class="form-outline">
+                    <label  for="nom">Nom </label>
+                    <input   type="text" name="nom" id="nom" class="form-control" formControlName="nom" />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-outline">
+                    <label  for="prenom">Prénom </label>
+                    <input  type="text" name="prenom" id="prenom" class="form-control" formControlName="prenom" />
+                  </div>
+                </div>
+              </div>
+              
+            <!-- 2 col date nais -->
+              <div class="row mb-4">
+                <div class="col">
+                  <div class="form-outline">
+                    <label class="form-label" for="form6Example1">Date de naissance</label>
+                    <input  name="date_nais" type="text" id="date_nais" class="form-control" formControlName="date_nais" />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-outline">
+                    <label class="form-label" for="form6Example2">Lieu de naissance</label>
+                    <input name="lieu_nais" type="text" id="lieu_nais" class="form-control" formControlName="lieu_nais" />
+                  </div>
+                </div>
+              </div>
+            <!-- sexe-->
+              <div >
+                <label class="form-label" for="sexe">Sexe  :</label>
+              </div>
+              <div class="form-check form-check-inline">
+                
+                <input  name="sexe"  class="form-check-input"  type="radio" value="M"
+                    id="sexe"  formControlName="sexe" />
+                <label class="form-check-label" for="sexe"> M </label>
+              </div>
+              
+              <div class="form-check form-check-inline mb-4">
+                <input   class="form-check-input" type="radio"
+                  name="sexe"   value="F"   id="sexe"    formControlName="sexe" />
+                <label class="form-check-label" for="sexe"> F </label>
+              </div>
+              
+              <div ng-switch="Enfant.sexe">
+                <div ng-switch-when="M"> </div>
+                <div ng-switch-when="F"> </div>
+              </div>
+            
+          <!-- suivi arabe-->
+
+              <div >
+                <label class="form-label" for="base_arabe">L'enfant a-t-il déjà suivi des cours d'arabe ?</label>
+              </div>
+              <div class="form-check form-check-inline">
+                
+                <input  name="base_arabe" class="form-check-input"  type="radio" value="Oui"
+                  name="base_arabe"   id="flexRadioDisabled" formControlName="base_arabe"  />
+                <label class="form-check-label" for="base_arabe"> Oui </label>
+              </div>
+
+              <div class="form-check form-check-inline mb-4">
+                <input  name="base_arabe"  class="form-check-input" type="radio" value="Non"
+                  name="base_arabe"      id="base_arabe"   formControlName="base_arabe"  />
+                <label class="form-check-label" for="flexRadioCheckedDisabled"> Non </label>
+              </div>
+              <div ng-switch="Enfant.base_arabe">
+                <div ng-switch-when="Oui"> </div>
+                <div ng-switch-when="Non"> </div>
+              </div>
+        <!-- deja inscrit -->
+              <div >
+                <label class="form-label" for="ancien_eleve">L’enfant a-t-il déjà suivi des cours d'arabe au sein de notre école durant l'année  scolaire 2020/2021: </label>
+              </div>
+              <div class="form-check form-check-inline">
+                
+                <input (click)="shoNumClass()"  name="ancien_eleve" class="form-check-input"  type="radio" value="Oui"
+                  name="ancien_eleve"   id="ancien_eleve"  value="oui" formControlName="ancien_eleve"  />
+                <label class="form-check-label" for="ancien_eleve"> Oui </label>
+              </div>
+
+              <div class="form-check form-check-inline mb-4">
+                <input (click)="hideNumClass()"  name="ancien_eleve" class="form-check-input" type="radio" value="Non"
+                  name="ancien_eleve"      id="ancien_eleve"  value="non" formControlName="ancien_eleve"  />
+                <label class="form-check-label" for="ancien_eleve"> Non </label>
+              </div>
+              <div ng-switch="Enfant.ancien_eleve">
+                <div ng-switch-when="Oui"  > </div>
+                <div ng-switch-when="Non"  > </div>
+              </div>
+              <!-- si ancien eleve  Si oui mettez son N° de Classe -->
+  
+              <div  *ngIf="showNumClass"  class="form-outline mb-4" >
+                <label class="form-label" for="num_class">Si oui mettez son N° de Classe</label>
+                <input type="text" id="num_class" class="form-control" formControlName="num_class" />
+              </div>
+
+              <!--  decharge autorisation  photo -->
+              <div >
+                <label class="form-label" for="photographie">Autorisation photoghraphie :
+                  
+                </label>
+                
+                <div class="alert alert-info" role="alert">
+                  <h4 class="alert-heading">L’association A.C.E.B :
+                    
+                  </h4>
+                   <hr>
+                <p> à photographier et à utiliser l’image (photo de classe ou autre) de notre enfant, conformément aux dispositions relatives au droit à l’image et au droit au nom.</p>
+                 <p>à fixer, reproduire et communiquer au public les photographies prises dans le cadre des activités de l’association. Les photographies pourront être exploitées 
+                   et utilisées directement, sous toute forme et tous supports connus et inconnus à ce jour, dans le monde entier, sans aucune limitation de temps et d’espace et ce 
+                   sans préjudice au règlement intérieur de l’association.</p>
+                  </div>
+
+              </div>
+              <div class="form-check form-check-inline">
+                <input  name="photographie" class="form-check-input"  type="radio" value="Oui"
+                    id="ancien_eleve"  formControlName="photographie" />
+                <label class="form-check-label" for="photographie"> Oui </label>
+              </div>
+
+              <div class="form-check form-check-inline mb-4">
+                <input  name="photographie" class="form-check-input" type="radio" value="Non"
+                      id="photographie"   formControlName="photographie"  />
+                <label class="form-check-label" for="photographie"> Non </label>
+              </div>
+              <div ng-switch="mnEleve.ancien_eleve">
+                <div ng-switch-when="Oui"> </div>
+                <div ng-switch-when="Non"> </div>
+              </div>
+              <!-- decharge rentrer seul -->
+              <div >
+                <label class="form-label" for="entrer_seul">J’autorise mon fils, ma fille à rentrer seul(e) à la maison : </label>
+                
+              </div>
+              <div class="form-check form-check-inline">
+                
+                <input  name="entrer_seul" class="form-check-input"  type="radio" value="Oui"
+                    id="entrer_seul" formControlName="entrer_seul"  />
+                <label class="form-check-label" for="entrer_seul"> Oui </label>
+              </div>
+
+              <div class="form-check form-check-inline mb-4">
+                <input  name="entrer_seul" class="form-check-input" type="radio" value="Non"
+                      id="entrer_seul"   formControlName="entrer_seul"  />
+                <label class="form-check-label" for="entrer_seul"> Non </label>
+              </div>
+              <div ng-switch="mnEleve.ancien_eleve">
+                <div ng-switch-when="Oui"> </div>
+                <div ng-switch-when="Non"> </div>
+              </div>
+
+              <div class="row mb-4 form-outline alert alert-info" role="alert" >
+                <div class="col"><p> Pour supprimer l'enfant cliquez  sur supprimer</p></div>
+            <div class="col">
+              <button type="button" (click)="deleteEnfant(pointIndex)" class="btn btn-sm btn-danger">
+                <i class="fa fa-trash"> Supprimer</i>
+              </button>
+            </div>
+            </div>
+             <hr>
+            </div> <!-- fin div  ngfor -->
+          <div  class="row mb-4 form-outline alert alert-info" role="alert" >
+            <div class="col"><p> Pour ajouter des enfants cliquez  sur Ajouter</p></div>
+            <div class="col">
+            <button type="button" (click)="addEnfant()" class="btn btn-sm btn-primary">
+              <i class="fa fa-user-plus"> Ajouter</i>
+            </button>
+          </div>
+          </div>
+        </div> 
+      </div>
+     
+  <!-- div  enfant  fin -->
+
+
+<br>
+  <!-- Checkbox -->
+ <!-- <div class="form-check d-flex justify-content-center form-check-inline mb-4">
+    <input class="form-check-input me-2" type="checkbox"  value=""    id="condition"    />
+    <label class="form-check-label form-check-inline" for="condition"> Accepter les conditions </label>
+  </div>-->
+
+  <div class="form-group form-check">
+    <input type="checkbox" formControlName="acceptTerms" id="acceptTerms" class="form-check-input" [ngClass]="{ 'is-invalid': submitted && f.acceptTerms.errors }" />
+    <label for="acceptTerms" class="form-check-label">Accepter les Conditions</label>
+    <div *ngIf="submitted && f.acceptTerms.errors" class="invalid-feedback">Accept Ts & Cs obligatoire</div>
+  </div>
+
+  <!-- Submit button -->
+  <div class="col-md-12 " align="center">
+    <button (click)="persistEleve()" type="submit" class="btn btn-outline-primary form-check-inline" 
+            >Inscrire</button>
+    <button  type="onReset()" class="btn btn-outline-primary ">Annuler</button>
+  </div>
+
+
+
+
+  
+</form>
+</div>
+</div>

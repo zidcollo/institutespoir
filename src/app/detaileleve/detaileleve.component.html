@@ -1,0 +1,200 @@
+
+<div class="container">
+    <div class="col-md-12" style="text-align:center" >
+      <h3> MODIFICATION </h3>
+    
+    </div>
+  
+  
+  <form>
+    <!-- 2 column grid layout with text inputs for the first and last names -->
+    <div class="row mb-4">
+      <div class="col">
+        <div class="form-outline">
+          <label  for="nom">Nom de l'élève</label>
+          <input  [(ngModel)]="mnEleve.nom"  placeholder="mnEleve.nom" type="text" name="nom" id="nom" class="form-control" />
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-outline">
+          <label  for="prenom">Prénom de l'élève</label>
+          <input [(ngModel)]="mnEleve.prenom" type="text" name="prenom" id="prenom" class="form-control" />
+        </div>
+      </div>
+    </div>
+    
+  <!-- 2 col date nais -->
+  <div class="row mb-4">
+    <div class="col">
+      <div class="form-outline">
+        <label class="form-label" for="form6Example1">Date de naissance</label>
+        <input [(ngModel)]="mnEleve.date_nais" name="date_nais" type="text" id="date_nais" class="form-control" />
+      </div>
+    </div>
+    <div class="col">
+      <div class="form-outline">
+        <label class="form-label" for="form6Example2">Lieu de naissance</label>
+        <input [(ngModel)]="mnEleve.lieu_nais" name="lieu_nais" type="text" id="lieu_nais" class="form-control" />
+      </div>
+    </div>
+  </div>
+  <!-- sexe-->
+  <div >
+    <label class="form-label" for="form6Example2">Sexe  :</label>
+  </div>
+  <div class="form-check form-check-inline">
+    
+    <input [(ngModel)]="mnEleve.sexe" name="sexe"  class="form-check-input"  type="radio" value="M"
+        id="sexe"   />
+    <label class="form-check-label" for="sexe"> M </label>
+  </div>
+  
+  <div class="form-check form-check-inline mb-4">
+    <input  [(ngModel)]="mnEleve.sexe" class="form-check-input" type="radio"
+      name="sexe"   value="F"   id="sexe"     />
+    <label class="form-check-label" for="sexe"> F </label>
+  </div>
+  
+  <div ng-switch="mnEleve.sexe">
+    <div ng-switch-when="M"> </div>
+    <div ng-switch-when="F"> </div>
+  </div>
+  
+    <!-- Text input -->
+    <div class="row mb-4">
+      <label class="form-label" for="form6Example1">Noms et prénoms des parents </label>
+    </div>
+   
+    <div class="row mb-4">
+      <div class="col">
+        <div class="form-outline">
+          <label class="form-label" for="form6Example1">Pére</label>
+          <input [(ngModel)]="mnEleve.nom_pere" name="nom_pere" type="text" id="nom_pere" class="form-control" />
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-outline">
+          <label class="form-label" for="form6Example2">Mére</label>
+          <input [(ngModel)]="mnEleve.nom_mere" name="nom_mere" type="text" id="nom_mere" class="form-control" />
+        </div>
+      </div>
+    </div>
+  <!-- -->
+    <!-- Text input -->
+   
+   
+    <div class="row mb-4">
+      <div class="col">
+        <div class="form-outline">
+          <label class="form-label" for="form6Example1">Profession Pére</label>
+          <input  name="professionpere" type="text" id="professionpere" class="form-control" disabled />
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-outline">
+          <label class="form-label" for="form6Example2">Profession Mére</label>
+          <input type="text" id="form6Example2" class="form-control" disabled/>
+        </div>
+      </div>
+    </div>
+    <!-- phone parent -->
+      <div class="row mb-4">
+        <div class="col">
+          <div class="form-outline">
+            <label class="form-label" for="form6Example1">Tel Pére</label>
+            <input type="text" id="form6Example1" class="form-control" disabled/>
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-outline">
+            <label class="form-label" for="form6Example2">Tel Mére</label>
+            <input type="text" id="form6Example2" class="form-control" disabled />
+          </div>
+        </div>
+      </div>
+    <!-- Text input -->
+    <div class="form-outline mb-4">
+      <label class="form-label" for="form6Example4">Address</label>
+      <input [(ngModel)]="mnEleve.adresse" name="adresse" type="text" id="adresse" class="form-control" />
+    </div>
+  
+    <!-- Email input -->
+    <div class="form-outline mb-4">
+      <label class="form-label" for="form6Example5">Email</label>
+      <input [(ngModel)]="mnEleve.email" name="email" type="email" id="email" class="form-control" />
+    </div>
+  
+    <!-- Number input -->
+    <div class="form-outline mb-4">
+      <label class="form-label" for="form6Example6">Tel Fix</label>
+      <input [(ngModel)]="mnEleve.tel" name="tel" type="text" id="tel" class="form-control" />
+    </div>
+  
+    <!-- suivi arabe-->
+  
+  <div >
+    <label class="form-label" for="form6Example2">L'enfant a-t-il déjà suivi des cours d'arabe ?</label>
+  </div>
+  <div class="form-check form-check-inline">
+    
+    <input [(ngModel)]="mnEleve.base_arabe" name="base_arabe" class="form-check-input"  type="radio" value="Oui"
+      name="base_arabe"   id="flexRadioDisabled"   />
+    <label class="form-check-label" for="base_arabe"> Oui </label>
+  </div>
+  
+  <div class="form-check form-check-inline mb-4">
+    <input [(ngModel)]="mnEleve.base_arabe" name="base_arabe"  class="form-check-input" type="radio" value="Non"
+      name="base_arabe"      id="base_arabe"     />
+    <label class="form-check-label" for="flexRadioCheckedDisabled"> Non </label>
+  </div>
+  <div ng-switch="mnEleve.base_arabe">
+    <div ng-switch-when="Oui"> </div>
+    <div ng-switch-when="Non"> </div>
+  </div>
+  <!-- deja inscrit -->
+  <div >
+    <label class="form-label" for="form6Example2">L’enfant a-t-il déjà suivi des cours d'arabe au sein de notre école durant l'année  scolaire 2020/2021: </label>
+  </div>
+  <div class="form-check form-check-inline">
+    
+    <input [(ngModel)]="mnEleve.ancien_eleve" name="ancien_eleve" class="form-check-input"  type="radio" value="Oui"
+      name="ancien_eleve"   id="ancien_eleve"   />
+    <label class="form-check-label" for="ancieneleve"> Oui </label>
+  </div>
+  
+  <div class="form-check form-check-inline mb-4">
+    <input [(ngModel)]="mnEleve.ancien_eleve" name="ancien_eleve" class="form-check-input" type="radio" value="Non"
+      name="ancien_eleve"      id="ancien_eleve"     />
+    <label class="form-check-label" for="ancien_eleve"> Non </label>
+  </div>
+  <div ng-switch="mnEleve.ancien_eleve">
+    <div ng-switch-when="Oui"> </div>
+    <div ng-switch-when="Non"> </div>
+  </div>
+  <!-- si ancien eleve  Si oui mettez son N° de Classe -->
+  <div class="form-outline mb-4">
+    <label class="form-label" for="form6Example4">Si oui mettez son N° de Classe</label>
+    <input type="text" id="form6Example4" class="form-control" />
+  </div>
+    <!-- Message input -->
+  
+  
+  
+    <!-- Checkbox -->
+<!--    <div class="form-check d-flex justify-content-center form-check-inline mb-4">
+      <input
+        class="form-check-input me-2" type="checkbox"  value=""
+        id="condition"    />
+      <label class="form-check-label form-check-inline" for="condition"> Accepter les conditions </label>
+    </div>-->
+  
+    <!-- Submit button -->
+    <div class="col-md-12 " align="center">
+      <button (click)="updateEleve()"  type="submit" class="btn btn-outline-primary form-check-inline">Modifier</button>
+      <button (click)="anuller()" type="reset" class="btn btn-outline-primary ">Annuler</button>
+      <!--<button  type="reset" class="btn btn-outline-primary ">Annuler</button>-->
+    </div>
+    
+  </form>
+  
+  </div><br><br> 
